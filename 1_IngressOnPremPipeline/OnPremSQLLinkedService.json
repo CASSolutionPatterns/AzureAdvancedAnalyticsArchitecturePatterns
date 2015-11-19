@@ -1,0 +1,13 @@
+{
+    "name": "OnPremSQLLinkedService",
+    "properties": {
+        "description": "LinkedService to connect to On-Prem SQL Server Database",
+        "type": "OnPremisesSqlServer",
+        "typeProperties": {
+            "connectionString": "Data Source=<server_name>;Initial Catalog=StarterKit;Integrated Security=False;User ID=<username>;Password=<password>",
+            "gatewayName": "onpremGateway",
+            "userName": "<username>",
+            "password": "<password>"
+        }
+    }
+}

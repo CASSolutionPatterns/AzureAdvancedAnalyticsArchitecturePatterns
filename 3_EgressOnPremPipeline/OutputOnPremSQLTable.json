@@ -1,0 +1,33 @@
+{
+    "name": "OutputOnPremSQLTable",
+    "properties": {
+        "structure": [
+            {
+                "name": "DeviceId",
+                "type": "String"
+            },
+            {
+                "name": "TranDate",
+                "type": "String"
+            },
+            {
+                "name": "ScoredLabels",
+                "type": "String"
+            },
+            {
+                "name": "ScoredProbabilities",
+                "type": "String"
+            }
+        ],
+        "published": false,
+        "type": "SqlServerTable",
+        "linkedServiceName": "OnPremSQLLinkedService",
+        "typeProperties": {
+            "tableName": "ScoringResults"
+        },
+        "availability": {
+            "frequency": "Hour",
+            "interval": 1
+        }
+    }
+}

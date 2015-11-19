@@ -1,0 +1,11 @@
+{
+    "name": "AMLLinkedService",
+    "properties": {
+        "description": "LinkedService to link to AML Experiment's BES endpoint.",
+        "type": "AzureML",
+        "typeProperties": {
+            "mlEndpoint": "https://ussouthcentral.services.azureml.net/workspaces/3232323/services/232323/jobs",
+            "apiKey": "<API_Key>"
+        }
+    }
+}
